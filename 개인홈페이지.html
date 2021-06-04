@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>요것은 홈페이지</title>
+<style>
+	html, body {
+		padding:0px; margin:0px;
+	}
+	table, td{
+		border-spacing:0px;
+	}
+	img{
+		display: block;
+	}
+	a{
+		text-decoration:none;
+		color: #333333;
+	}
+	a:link{
+		text-decoration: none;
+	}
+	a:visited{
+		text-decoration: none;
+	}
+	a:hover{
+		text-decoration: none;
+	}
+	a:active{
+		text-decoration: none;
+	}
+	.main{
+		margin:0px auto;
+		width: 1300px;
+		padding: 6px;
+		text-align: center;
+		font-weight: bold;
+		font-size: 35px;
+		padding:50px 0px 50px 0px;
+		}
+	.tb1{
+		margin:0px auto;
+		width: 1300px;
+		padding: 6px;
+		text-align: center;
+		}
+	.tb1_1{
+		border:1px solid black;
+		border-radius: 10px;
+		background-color: #D3AF92;
+		width: 200px;
+		cursor:pointer;
+		margin:10px;
+	}
+	.tb2{
+		margin:0px auto;
+		width: 1300px;
+		padding: 6px;
+		}
+	.tb3{
+		margin:0px auto;
+		width: 1300px;
+		padding: 6px;
+		}
+	.logtb{
+		margin:0px auto;
+		width: 1300px;
+		padding: 6px;
+		text-align:fustify;
+	}
+	.login{
+		border:1px solid #333333;
+		margin: 6px;
+		width: 50px;
+		cursor: pointer;
+		background-color: #ffffff;
+	}
+	.login1{
+		border:1px solid #333333;
+		margin: 6px;
+		width: 70px;
+		cursor: pointer;
+		background-color: #ffffff;
+	}
+	.
+</style>
+<script>
+function go(){
+	if(id.value==""){
+		alert("아이디 입력 요청");
+		id.focus();
+		return;
+	}
+	if(!pass.value){
+		alert("비밀번호 입력 요청");
+		pass.focus();
+		return;
+	}
+	document.login.submit();
+}
+</script>
+</head>
+<body>
+<div style="background-color: #f2ecdc;"><!--로그인,로고-->
+	<table class="tb1">
+		<tr>
+			<form name="login" action="member/login.html" method="post">
+			<td width=750></td>
+			<td><input type="text" id= "id"name="id" placeholder="아이디"></input></td>
+			<td><input type="password" id="pass"name="pass" placeholder="비밀번호"></input></td>
+			</form>
+			<td><input type="submit" value="로그인" name="login" onclick="go()"></td>
+			<td width=10></td>
+			<td><button>회원가입</button></td>
+		</tr>
+	</table>
+	<table class="main">
+		<tr>
+			<td>어서오시게</td>
+		</tr>
+	</table>
+</div>
+<div style="background-color: #f2ecdc;"><!--게시판종류-->
+	<table class="tb1">
+		<tr>
+			
+			<td class="tb1_1">구인구직</td>
+			<td></td>
+			<td class="tb1_1">교환</td>
+			<td></td>
+			<td class="tb1_1">자유</td>
+			<td></td>
+			<td class="tb1_1">공략</td>
+			<td></td>
+			<td class="tb1_1">계산기</td>
+			
+		</tr>
+	</table>
+</div>
+<div style="margin:100px 0px 100px 0px;"><!--게시판-->
+	<table class="tb2">
+		<tr>
+			<td>
+				<table width=400>
+					<tr>
+						<td width=330><a href="">게시판명</a></td><td><a href="">더보기</a></td>
+					</tr>
+					<tr>
+						<td colspan=2><a href="">내용용쓰</a></td>
+					</tr>
+					<tr>
+						<td colspan=2><a href="">내용용쓰</a></td>
+					</tr>
+					<tr>
+						<td colspan=2><a href="">내용용쓰</a></td>
+					</tr>
+					<tr>
+						<td colspan=2><a href="">내용용쓰</a></td>
+					</tr>
+					<tr>
+						<td colspan=2><a href="">내용용쓰</a></td>
+					</tr>
+				</table>
+			</td>
+			<td>
+				<table width=400>
+					<tr>
+						<td width=330><a href="">게시판명</a></td><td><a href="">더보기</a></td>
+					</tr>
+					<tr>
+						<td colspan=2><a href="">내용용쓰</a></td>
+					</tr>
+					<tr>
+						<td colspan=2><a href="">내용용쓰</a></td>
+					</tr>
+					<tr>
+						<td colspan=2><a href="">내용용쓰</a></td>
+					</tr>
+					<tr>
+						<td colspan=2><a href="">내용용쓰</a></td>
+					</tr>
+					<tr>
+						<td colspan=2><a href="">내용용쓰</a></td>
+					</tr>
+				</table>
+			</td>
+			<td>
+				<table width=400>
+					<tr>
+						<td width=330><a href="">게시판명</a></td><td><a href="">더보기</a></td>
+					</tr>
+					<tr>
+						<td colspan=2><a href="">내용용쓰</a></td>
+					</tr>
+					<tr>
+						<td colspan=2><a href="">내용용쓰</a></td>
+					</tr>
+					<tr>
+						<td colspan=2><a href="">내용용쓰</a></td>
+					</tr>
+					<tr>
+						<td colspan=2><a href="">내용용쓰</a></td>
+					</tr>
+					<tr>
+						<td colspan=2><a href="">내용용쓰</a></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+</div>
+<div>
+	<table class="tb1">
+		<tr>
+			<td>123</td>
+		</tr>
+	</table>
+</div>
+
+
+<div style="background-color: #f2ecdc;margin-top:50px;"><!--맨밑-->
+	<table class="tb3">
+		<tr>
+			<td><span id="aaa">지금 시간은?</span><br>
+				<input id="bbb">
+			</td>
+		</tr>
+	</table>
+</div>
+<script>
+var today = new Date();
+//document.write(today+"<br>");
+aaa.innerHTML = today.toLocaleString();
+bbb.value = today.toLocaleString();
+</script>
+</body>
+</html>
